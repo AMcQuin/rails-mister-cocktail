@@ -1,12 +1,15 @@
-<div  class="container"><h1>All our Cocktails (<%=@cocktails.size%>)</h1></div>
+<div class="home-banner">
 
-<div class="container">
-  <% @cocktails.each do |cocktail| %>
-    <div>
-      <div>
-        <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+  <div  class="container"><h1>All our Cocktails (<%=@cocktails.size%>)</h1>
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-product">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+        <div class="card-product-infos">
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+          <p>Product description with <strong>relevant info</strong> only.</p>
+        </div>
       </div>
-
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
+
