@@ -1,0 +1,12 @@
+<div  class="container"><h1>All our Cocktails (<%=@cocktails.size%>)</h1></div>
+
+<div class="container">
+  <% @cocktails.each do |cocktail| %>
+    <div>
+      <div>
+        <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+      </div>
+
+    </div>
+  <% end %>
+</div>
