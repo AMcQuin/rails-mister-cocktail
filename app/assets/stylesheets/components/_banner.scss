@@ -3,8 +3,8 @@
   background-size: cover;
   height: 100vh;
   color: #eee;
-  text-align: center;
-  padding: 150px 0;
+  text-align: left;
+  padding: 50px 0;
   //padding-top: 40vh;
 }
 
@@ -19,7 +19,7 @@
 // }
 
 .home-banner h1 {
-  margin: 0;
+  margin: 10px;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
@@ -31,4 +31,11 @@
   color: black;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.home-banner a {
+  font-size: 20px;
+  color: blue;
+  opacity: .7;
+  text-shadow: 1px 1px 3px white;
 }
