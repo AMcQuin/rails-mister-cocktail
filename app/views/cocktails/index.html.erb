@@ -1,23 +1,18 @@
-<div class="home-banner">
-
 <div class="container">
   <div>
     <h1>All our Cocktails (<%=@cocktails.size%>)</h1>
   </div>
-    <div class="card-section">
-        <% @cocktails.each do |cocktail| %>
-          <div class="card-product">
-            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-            <div class="card-product-infos">
-              <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-              <% cocktail.ingredients.each do |ingredient| %>
-              <p><%= ingredient.name %></p>
-              <% end %>
-            </div>
+  <div class="card-section">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-product">
+          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+          <div class="card-product-infos">
+            <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+            <% cocktail.ingredients.each do |ingredient| %>
+            <p><%= ingredient.name %></p>
+            <% end %>
           </div>
-        <% end %>
-      </div>
-    </div>
+        </div>
+      <% end %>
   </div>
-
 </div>
